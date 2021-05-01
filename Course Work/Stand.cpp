@@ -42,6 +42,8 @@ void Stand::printTable(ChosenParam& chosenparams)
 		printInFormat(i, '%');
 	}
 	printLine();
+
+	std::cout << "Weight(%) reprsents an average of sum of element of each ROW" << std::endl;
 }
 
 std::vector<std::vector<double>> Stand::getContent() const { return m_content; }

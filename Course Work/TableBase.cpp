@@ -1,18 +1,27 @@
 #include "TableBase.h"
 #include <iomanip>
+#include <sstream>
 
 //private methods
 
 
+void TableBase::ssprint(std::stringstream& ss)
+{
+	std::cout << std::setw(15) << std::left << ss.str() << '|';
+}
 
 void TableBase::printInFormat(std::string cell)
 {
-	std::cout << std::setw(15) << std::left << cell << '|';
+	std::stringstream ss;
+	ss << ' ' << cell;
+	ssprint(ss);
 }
 
 void TableBase::printInFormat(double& cell, char postfix)
 {
-	std::cout << postfix << std::setw(14) << std::left << std::setprecision(3) << std::fixed << cell << '|';
+	std::stringstream ss;
+	ss << ' ' << std::setprecision(3) << std::fixed << cell << postfix;
+	ssprint(ss);
 }
 
 void TableBase::printLine()

@@ -10,7 +10,7 @@ protected:
 protected:
 	void ssprint(std::stringstream& ss);
 	void printInFormat(std::string cell);
-	void printInFormat(double& cell, char postfix = ' ');
+	void printInFormat(double& cell, char postfix = ' ', int precision = 3);
 	void printLine();
 
 public:

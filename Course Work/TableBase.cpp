@@ -17,10 +17,10 @@ void TableBase::printInFormat(std::string cell)
 	ssprint(ss);
 }
 
-void TableBase::printInFormat(double& cell, char postfix)
+void TableBase::printInFormat(double& cell, char postfix, int precision)
 {
 	std::stringstream ss;
-	ss << ' ' << std::setprecision(3) << std::fixed << cell << postfix;
+	ss << ' ' << std::setprecision(precision) << std::fixed << cell << postfix;
 	ssprint(ss);
 }
 

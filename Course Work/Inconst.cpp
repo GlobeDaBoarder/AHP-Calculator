@@ -22,12 +22,12 @@ Inconst::Inconst(PairwiseComp& PCTable, Stand& stand) : TableBase()
 		double tempSum = 0;
 		for (int j = 0; j < 5; ++j)
 		{
-			m_content[i][j] = PCTable.getContent()[i][j] * m_weightscopy[i];
+			m_content[i][j] = PCTable.getContent()[i][j] * m_weightscopy[i]/100;
 			tempSum += m_content[i][j];
 		}
 
 		m_weightsum.push_back(tempSum);
-		m_lambda.push_back(m_weightsum[i] / m_weightscopy[i]);
+		m_lambda.push_back(m_weightsum[i] / m_weightscopy[i]/100);
 	}
 }
 

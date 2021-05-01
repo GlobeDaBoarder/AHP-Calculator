@@ -42,9 +42,6 @@
     <ClCompile Include="ChosenParam.cpp">
       <Filter>Source Files\input</Filter>
     </ClCompile>
-    <ClCompile Include="InconstClass.cpp">
-      <Filter>Source Files\Table classes</Filter>
-    </ClCompile>
     <ClCompile Include="PairwiseComp.cpp">
       <Filter>Source Files\Table classes</Filter>
     </ClCompile>
@@ -58,6 +55,9 @@
       <Filter>Source Files\Phone Classes</Filter>
     </ClCompile>
     <ClCompile Include="TableBase.cpp">
+      <Filter>Source Files\Table classes</Filter>
+    </ClCompile>
+    <ClCompile Include="Inconst.cpp">
       <Filter>Source Files\Table classes</Filter>
     </ClCompile>
   </ItemGroup>
@@ -83,13 +83,13 @@
     <ClInclude Include="Stand.h">
       <Filter>Header Files\Table classes</Filter>
     </ClInclude>
-    <ClInclude Include="InconstClass.h">
-      <Filter>Header Files\Table classes</Filter>
-    </ClInclude>
     <ClInclude Include="Phone.h">
       <Filter>Header Files\Phone classes</Filter>
     </ClInclude>
     <ClInclude Include="ITable.h">
+      <Filter>Header Files\Table classes</Filter>
+    </ClInclude>
+    <ClInclude Include="Inconst.h">
       <Filter>Header Files\Table classes</Filter>
     </ClInclude>
   </ItemGroup>

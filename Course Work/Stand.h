@@ -3,7 +3,7 @@
 #include "PairwiseComp.h"
 class Stand : public TableBase
 {
-protected:
+private:
 	std::vector<double> m_weight;
 
 private:

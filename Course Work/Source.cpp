@@ -4,6 +4,7 @@
 #include <fstream>
 #include "PairwiseComp.h"
 #include "Stand.h"
+#include "Inconst.h"
 
 
 int main()
@@ -53,4 +54,9 @@ int main()
 	//Standardized matrix
 	Stand stand(PCTable);
 	stand.printTable(chosenParams);
+
+	//inconst 
+
+	Inconst inconst(PCTable, stand);
+	inconst.printTable(chosenParams);
 }

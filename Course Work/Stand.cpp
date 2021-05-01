@@ -29,7 +29,7 @@ Stand::Stand(PairwiseComp& PCTable) : TableBase()
 	{
 		for (int j = 0; j < 5; ++j)
 		{
-			Stand::m_content[i][j] = PCTable.getContent()[i][j] / PCTable.getSum()[j];
+			m_content[i][j] = PCTable.getContent()[i][j] / PCTable.getSum()[j];
 		}
 
 		m_weight.push_back(avg(m_content[i])*100);

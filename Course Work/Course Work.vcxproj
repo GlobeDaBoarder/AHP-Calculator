@@ -140,7 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="ChosenParam.cpp" />
-    <ClCompile Include="InconstClass.cpp" />
+    <ClCompile Include="Inconst.cpp" />
     <ClCompile Include="PairwiseComp.cpp" />
     <ClCompile Include="Param.cpp" />
     <ClCompile Include="Phone.cpp" />
@@ -150,7 +150,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ChosenParam.h" />
-    <ClInclude Include="InconstClass.h" />
+    <ClInclude Include="Inconst.h" />
     <ClInclude Include="ITable.h" />
     <ClInclude Include="PairwiseComp.h" />
     <ClInclude Include="Param.h" />

@@ -22,7 +22,7 @@ Stand::Stand(PairwiseComp& PCTable) : TableBase()
 			Stand::m_content[i][j] = PCTable.getContent()[i][j] / PCTable.getSum()[j];
 		}
 
-		m_weight.push_back(avg(m_content[i]));
+		m_weight.push_back(avg(m_content[i])*100);
 	}
 }
 
@@ -36,8 +36,12 @@ void Stand::printTable(ChosenParam& chosenparams)
 
 	TableBase::printTable(chosenparams);
 
-
-
+	printInFormat("WEIGHTS");
+	for (auto& i : m_weight)
+	{
+		printInFormat(i, '%');
+	}
+	printLine();
 }
 
 std::vector<std::vector<double>> Stand::getContent() const { return m_content; }

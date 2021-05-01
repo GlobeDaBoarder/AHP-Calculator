@@ -11,7 +11,7 @@ void PairwiseComp::CountSum()
 		double tempSum = 0;
 		for (int j = 0; j < 5; ++j)
 		{
-			tempSum += m_content[i][j];
+			tempSum += m_content[j][i];
 		}
 		m_sum.push_back(tempSum);
 	}
@@ -81,7 +81,7 @@ void PairwiseComp::printTable(ChosenParam& chosenParams)
 	TableBase::printTable(chosenParams);
 
 	printInFormat("SUM");
-	for (auto& i : m_sum)
+	for (double& i : m_sum)
 	{
 		printInFormat(i);
 	}

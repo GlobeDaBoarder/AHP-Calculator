@@ -10,9 +10,9 @@ void TableBase::printInFormat(std::string cell)
 	std::cout << std::setw(15) << std::left << cell << '|';
 }
 
-void TableBase::printInFormat(double& cell)
+void TableBase::printInFormat(double& cell, char postfix)
 {
-	std::cout << std::setw(15) << std::left << std::setprecision(3) << std::fixed << cell << '|';
+	std::cout << postfix << std::setw(14) << std::left << std::setprecision(3) << std::fixed << cell << '|';
 }
 
 void TableBase::printLine()

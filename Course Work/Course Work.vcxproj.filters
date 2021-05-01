@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Phone classes">
+      <UniqueIdentifier>{bba6f6a2-871a-4735-a502-3ce63712b60b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Table classes">
+      <UniqueIdentifier>{b1834073-235d-4df1-83a6-025423d0c8c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\input">
+      <UniqueIdentifier>{ddb432f3-e3b7-4f65-b7c7-95e99c1ecf9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\input">
+      <UniqueIdentifier>{3796c1af-1b5a-4069-b278-f73efd5acefb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Table classes">
+      <UniqueIdentifier>{9cff3f4a-8d30-468c-9a42-ac8c5293c7b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\NewFilter1">
+      <UniqueIdentifier>{70172be8-dc44-4406-91c1-36336a62bd6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Phone Classes">
+      <UniqueIdentifier>{4a4f6519-3ca2-4bf9-8c1c-4632ce083fc1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ChosenParam.cpp">
+      <Filter>Source Files\input</Filter>
+    </ClCompile>
+    <ClCompile Include="InconstClass.cpp">
+      <Filter>Source Files\Table classes</Filter>
+    </ClCompile>
+    <ClCompile Include="PairwiseComp.cpp">
+      <Filter>Source Files\Table classes</Filter>
+    </ClCompile>
+    <ClCompile Include="Stand.cpp">
+      <Filter>Source Files\Table classes</Filter>
+    </ClCompile>
+    <ClCompile Include="Param.cpp">
+      <Filter>Source Files\Phone Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="Phone.cpp">
+      <Filter>Source Files\Phone Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="TableBase.cpp">
+      <Filter>Source Files\Table classes</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="IPhone.h">
+      <Filter>Header Files\Phone classes</Filter>
+    </ClInclude>
+    <ClInclude Include="TableBase.h">
+      <Filter>Header Files\Table classes</Filter>
+    </ClInclude>
+    <ClInclude Include="ChosenParam.h">
+      <Filter>Header Files\input</Filter>
+    </ClInclude>
+    <ClInclude Include="IChosenParam.h">
+      <Filter>Header Files\input</Filter>
+    </ClInclude>
+    <ClInclude Include="Param.h">
+      <Filter>Header Files\Phone classes</Filter>
+    </ClInclude>
+    <ClInclude Include="PairwiseComp.h">
+      <Filter>Header Files\Table classes</Filter>
+    </ClInclude>
+    <ClInclude Include="Stand.h">
+      <Filter>Header Files\Table classes</Filter>
+    </ClInclude>
+    <ClInclude Include="InconstClass.h">
+      <Filter>Header Files\Table classes</Filter>
+    </ClInclude>
+    <ClInclude Include="Phone.h">
+      <Filter>Header Files\Phone classes</Filter>
+    </ClInclude>
+    <ClInclude Include="ITable.h">
+      <Filter>Header Files\Table classes</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -52,4 +52,5 @@ void Stand::printTable(ChosenParam& chosenparams)
 }
 
 std::vector<std::vector<double>> Stand::getContent() const { return m_content; }
+std::vector<double> Stand::getWeights() const { return m_weight; }
 

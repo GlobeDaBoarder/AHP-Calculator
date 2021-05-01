@@ -15,6 +15,8 @@ public:
 	~Stand();
 
 	void printTable(ChosenParam& chosenParams) override;
+
 	std::vector<std::vector<double>> getContent() const override;
+	std::vector<double> getWeights() const;
 };
 

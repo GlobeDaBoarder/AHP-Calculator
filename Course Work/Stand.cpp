@@ -2,6 +2,16 @@
 
 //private method
 
+void Stand::printweights() 
+{
+	printInFormat("WEIGHTS");
+	for (auto& i : m_weight)
+	{
+		printInFormat(i, '%');
+	}
+	printLine();
+}
+
 double  Stand::avg(std::vector<double>& line)
 {
 	double tempSum = 0;
@@ -36,12 +46,7 @@ void Stand::printTable(ChosenParam& chosenparams)
 
 	TableBase::printTable(chosenparams);
 
-	printInFormat("WEIGHTS");
-	for (auto& i : m_weight)
-	{
-		printInFormat(i, '%');
-	}
-	printLine();
+	printweights();
 
 	std::cout << "Weight represents average of sum of every ROW" << std::endl;
 }

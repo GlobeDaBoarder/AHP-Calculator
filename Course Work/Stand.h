@@ -8,6 +8,7 @@ protected:
 
 private:
 	double  avg(std::vector<double>& line);
+	void printweights();
 
 public:
 	Stand(PairwiseComp& PCTable);

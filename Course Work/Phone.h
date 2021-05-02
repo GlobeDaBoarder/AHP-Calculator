@@ -6,15 +6,14 @@ class Phone : public IPhone
 {
 private:
 
-	//list??
 	std::string m_name;
-	Param m_display{ "Display" };
+	Param m_display{ "Display (ppi)" };
 	Param m_memSize{ "Memory Size" };
 	Param m_ram{ "RAM" };
-	Param m_price{ "Price" };
-	Param m_perform{ "Performance " };
-	Param m_batt{ "Battery" };
-	Param m_cam{ "Camera" };
+	Param m_price{ "Price (Euro)" };
+	Param m_perform{ "Performance (Antutu score)" };
+	Param m_batt{ "Battery (h)" };
+	Param m_cam{ "Camera (MP)" };
 
 	std::ifstream& readParams(std::ifstream& input) override;
 	std::ostream& printPhone(std::ostream& output)const override;

@@ -76,8 +76,8 @@ void StartCalculations()
 
 	//comparing values 
 
-	ValPair valPair;
 	int ind = 0;
+	ValPair valPair(chosenParams, ind);
 	valPair.printTable(chosenParams, ind);
 }
 

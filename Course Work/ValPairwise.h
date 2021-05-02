@@ -7,7 +7,7 @@ private:
 
 public:
 
-	ValPair();
+	ValPair(ChosenParam& chosenParams, int& ind);
 	~ValPair();
 
 	void printTable(ChosenParam& chosenParams, int& i) override;

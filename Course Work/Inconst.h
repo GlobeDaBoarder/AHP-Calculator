@@ -26,6 +26,6 @@ public:
 	void printTable(ChosenParam& chosenParams) override;
 	std::vector<std::vector<double>> getContent() const override;
 
-
+	const double& getInconsis() const; 
 };
 

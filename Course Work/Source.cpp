@@ -6,8 +6,7 @@
 #include "Stand.h"
 #include "Inconst.h"
 
-
-int main()
+void StartCalculations()
 {
 	//getting phone stats from files
 
@@ -25,14 +24,6 @@ int main()
 	std::ifstream HuaweiFile(".\\inputfiles\\HuaweiParams.txt");
 	HuaweiFile >> Huawei;
 	HuaweiFile.close();
-
-		///  UI
-
-	std::cout << "Weclome to AHP Method calculator! \n"
-		"AHP (Analytic hierarchy process) is a technique for organizing a complicaed decission making process\n"
-		"In the current Example 3 Phones are presented \n"
-		"Choose important to you parameters and this calculator will give you a good option for you! \n";
-
 	std::cout << std::endl << "Here are all the parameters of phones: " << std::endl << std::endl;
 	std::cout << Iphone << Samsung << Huawei;
 
@@ -59,4 +50,53 @@ int main()
 
 	Inconst inconst(PCTable, stand);
 	inconst.printTable(chosenParams);
+
+	const double inconsistency = inconst.getInconsis();
+
+	if (inconsistency < 0.1)
+	{
+		std::cout << "Inconsistency is less than 10%. Great job! Let's continue our calculations\n\n ";
+	}
+	else
+	{
+		std::cout << "Your criteria evaluations are not consistent! Try imputing more logical and consistent evaluations! \n\n";
+		return;
+	}
+
+	std::cout << "Calculations are finished! You can try to do"
+		"more calculations with different evaluations or quit the calculator \n\n";
+
+}
+
+int main()
+{
+		///  UI
+
+	std::cout << "Weclome to AHP Method calculator! \n"
+		"AHP (Analytic hierarchy process) is a technique for organizing a complicaed decission making process\n"
+		"In the current Example 3 Phones are presented \n"
+		"Choose important to you parameters and this calculator will give you a good option for you! \n";
+
+	char ControlChar = ' ';
+
+	while (true)
+	{
+		std::cout <<"Press 's' ro start evaluating and calculating \n"
+			"Press 'q' to quit calculator \n";
+		std::cin >> ControlChar;
+
+		switch (ControlChar)
+		{
+		case 's':
+			StartCalculations();
+			break;
+		case 'q':
+			exit(0);
+		default:
+			std::cout << "[WRONG INPUT] \n";
+		}
+	}
+	
+
+	
 }

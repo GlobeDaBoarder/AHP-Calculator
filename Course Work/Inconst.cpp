@@ -51,6 +51,7 @@ void Inconst::printConsisCalc()
 	std::cout << std::setw(20) << ' '  << "Lambda avg = " << m_lambdaAvg << std::endl;
 	std::cout << std::setw(20) << ' ' << "Consistency index = (Lambda avg - n)/n-1= " << m_consisIndex << std::endl;
 	std::cout << std::setw(20) << ' '  << "Consistency ratio " << m_consisratio * 100 << '%' << std::endl;
+	std::cout << std::setw(20) << ' ' << "Consistency ratio should be <10% " << std::endl;
 }
 
 //public
@@ -98,3 +99,4 @@ void Inconst::printTable(ChosenParam& chosenparams)
 }
 
 std::vector<std::vector<double>> Inconst::getContent() const { return m_content; }
+const double& Inconst::getInconsis() const { return m_consisratio; }

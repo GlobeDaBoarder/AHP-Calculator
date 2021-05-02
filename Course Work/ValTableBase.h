@@ -1,11 +1,15 @@
 #pragma once
 #include <vector>
-class ValTableBase
+#include "ChosenParam.h"
+#include "IValTable.h"
+class ValTableBase : public IValTable
 {
-private:
+protected:
 	std::vector<std::vector<double>> m_content;
 
 public:
+	ValTableBase();
 
+	//void printTable(ChosenParam& chosenParams) override;
 
 };

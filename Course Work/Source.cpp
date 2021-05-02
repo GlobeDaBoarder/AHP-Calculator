@@ -4,7 +4,7 @@
 #include <fstream>
 #include "PairwiseComp.h"
 #include "Stand.h"
-#include "Inconst.h"
+#include "Inconsist.h"
 
 void StartCalculations()
 {
@@ -40,13 +40,15 @@ void StartCalculations()
 
 
 	//printing pairwise comparison of parameters
+
 	PCTable.printTable(chosenParams);
 
 	//Standardized matrix
+
 	Stand stand(PCTable);
 	stand.printTable(chosenParams);
 
-	//inconst 
+	//inconsist 
 
 	Inconst inconst(PCTable, stand);
 	inconst.printTable(chosenParams);

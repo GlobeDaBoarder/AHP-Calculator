@@ -63,9 +63,6 @@
     <ClCompile Include="TableBase.cpp">
       <Filter>Source Files\Criteria Evaluation Table classes</Filter>
     </ClCompile>
-    <ClCompile Include="Inconst.cpp">
-      <Filter>Source Files\Criteria Evaluation Table classes</Filter>
-    </ClCompile>
     <ClCompile Include="ValTableBase.cpp">
       <Filter>Source Files\Value evaluation Table Classes</Filter>
     </ClCompile>
@@ -74,6 +71,9 @@
     </ClCompile>
     <ClCompile Include="ValStand.cpp">
       <Filter>Source Files\Value evaluation Table Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="Inconsist.cpp">
+      <Filter>Source Files\Criteria Evaluation Table classes</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -104,9 +104,6 @@
     <ClInclude Include="ITable.h">
       <Filter>Header Files\Criteria evaluation Table classes</Filter>
     </ClInclude>
-    <ClInclude Include="Inconst.h">
-      <Filter>Header Files\Criteria evaluation Table classes</Filter>
-    </ClInclude>
     <ClInclude Include="IValTable.h">
       <Filter>Header Files\Value evaluation table Classes</Filter>
     </ClInclude>
@@ -118,6 +115,9 @@
     </ClInclude>
     <ClInclude Include="ValueStand.h">
       <Filter>Header Files\Value evaluation table Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="Inconsist.h">
+      <Filter>Header Files\Criteria evaluation Table classes</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -75,6 +75,9 @@
     <ClCompile Include="Inconsist.cpp">
       <Filter>Source Files\Criteria Evaluation Table classes</Filter>
     </ClCompile>
+    <ClCompile Include="ValStruct.cpp">
+      <Filter>Source Files\input</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="IPhone.h">
@@ -118,6 +121,9 @@
     </ClInclude>
     <ClInclude Include="Inconsist.h">
       <Filter>Header Files\Criteria evaluation Table classes</Filter>
+    </ClInclude>
+    <ClInclude Include="ValStruct.h">
+      <Filter>Header Files\input</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

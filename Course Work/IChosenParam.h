@@ -1,13 +1,13 @@
 #pragma once
 #include "Phone.h"
+#include "ValStruct.h"
+
 class IChosenParam
 {
 public:
-	virtual void ChooseParams(Phone&, Phone&, Phone&) = 0;
+	virtual void ChooseParams(std::vector<Phone>& phones) = 0;
 	virtual void printChosen() = 0;
 
 	virtual std::vector<std::string> getChosenParam() const= 0;
-	virtual std::vector<Param> getIphoneParam() const = 0;
-	virtual std::vector<Param> getSamsungParam() const = 0;
-	virtual std::vector<Param> getHuaweiParam() const = 0;
+	virtual std::vector<Val> getChosenValues() const = 0;
 };

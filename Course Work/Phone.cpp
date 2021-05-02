@@ -10,22 +10,13 @@ Phone::~Phone()
 
 const std::string& Phone::getName() const { return m_name; }
 
-const Param& Phone::getDisplay() const { return m_display; }
-const Param& Phone::getMemSize() const { return m_memSize; }
-const Param& Phone::getRam() const { return m_ram; }
-const Param& Phone::getPrice() const { return m_price; }
-const Param& Phone::getPerform() const { return m_perform; }
-const Param& Phone::getBatt() const { return m_batt; }
-const Param& Phone::getCam() const { return m_cam; }
-
-void Phone::setName(std::string name) { m_name = name; }
-void Phone::setDisplayVal(int val) { m_display.value = val; }
-void Phone::setMemSizeVal(int val) { m_memSize.value = val; }
-void Phone::setRamVal(int val) { m_ram.value = val; }
-void Phone::setPriceVal(int val) { m_price.value = val; }
-void Phone::setPerformVal(int val) { m_perform.value = val; }
-void Phone::setBattVal(int val) { m_batt.value = val; }
-void Phone::setCamVal(int val) { m_cam.value = val; }
+const Param Phone::getDisplay() const { return m_display; }
+const Param Phone::getMemSize() const { return m_memSize; }
+const Param Phone::getRam() const { return m_ram; }
+const Param Phone::getPrice() const { return m_price; }
+const Param Phone::getPerform() const { return m_perform; }
+const Param Phone::getBatt() const { return m_batt; }
+const Param Phone::getCam() const { return m_cam; }
 
 std::ifstream& Phone::readParams(std::ifstream& input)
 {

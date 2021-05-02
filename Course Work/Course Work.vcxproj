@@ -145,6 +145,7 @@
     <ClCompile Include="Param.cpp" />
     <ClCompile Include="Phone.cpp" />
     <ClCompile Include="Source.cpp" />
+    <ClCompile Include="ValStruct.cpp" />
     <ClCompile Include="Stand.cpp" />
     <ClCompile Include="TableBase.cpp" />
     <ClCompile Include="ValPairwise.cpp" />
@@ -163,6 +164,7 @@
     <ClInclude Include="TableBase.h" />
     <ClInclude Include="IPhone.h" />
     <ClInclude Include="Phone.h" />
+    <ClInclude Include="ValStruct.h" />
     <ClInclude Include="ValTableBase.h" />
     <ClInclude Include="ValuePairwise.h" />
     <ClInclude Include="ValueStand.h" />

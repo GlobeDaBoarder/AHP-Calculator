@@ -26,25 +26,14 @@ public:
 
 	const std::string& getName() const override;
 
-	const Param& getDisplay() const override;
-	const Param& getMemSize() const override;
-	const Param& getRam() const override;
-	const Param& getPrice() const override;
-	const Param& getPerform() const override;
-	const Param& getBatt() const override;
-	const Param& getCam() const override;
-
-	//pass the whole param, then het name
+	const Param getDisplay() const override;
+	const Param getMemSize() const override;
+	const Param getRam() const override;
+	const Param getPrice() const override;
+	const Param getPerform() const override;
+	const Param getBatt() const override;
+	const Param getCam() const override;
 	
-	void setName(std::string) override;
-	void setDisplayVal(int) override;
-	void setMemSizeVal(int) override;
-	void setRamVal(int) override;
-	void setPriceVal(int) override;
-	void setPerformVal(int) override;
-	void setBattVal(int) override;
-	void setCamVal(int) override;
-
 	friend std::ifstream& operator>> (std::ifstream& input, Phone& phone);
 	friend std::ostream& operator<< (std::ostream& output, Phone& phone);
 };

@@ -20,8 +20,14 @@ ChosenParam::~ChosenParam()
 {
 }
 
-void ChosenParam::ChooseParams(Phone& Iphone, Phone& Samsung, Phone& Huawei)
+void ChosenParam::ChooseParams(std::vector<Phone>& phones)
 {
+	for (int i = 0; i < 3; ++i)
+	{
+		Val temp;
+		m_chosenValues.push_back(temp);
+	}
+
 	std::cout << "Type in numbers from 1 to 7 to choose parameters (choose 5 of them)" << std::endl;
 	std::cout << "1 -- Display \t" << "2 -- Memory size \t"
 		<< "3 -- RAM \t" << "4 -- Price \t"
@@ -52,51 +58,79 @@ void ChosenParam::ChooseParams(Phone& Iphone, Phone& Samsung, Phone& Huawei)
 			{
 			case 1:
 				m_chosenParam.push_back("Display");
-				m_IphoneChosen.push_back(Iphone.getDisplay());
-				m_SamsungChosen.push_back(Samsung.getDisplay());
-				m_HuaweiChosen.push_back(Huawei.getDisplay());
+
+				for (int i = 0; i < 3; ++i)
+				{
+					m_chosenValues[i].phoneName = phones[i].getName();
+					m_chosenValues[i].stats.push_back(phones[i].getDisplay());
+				}
+
 				inUse.push_back(inVal);
 				break;
 			case 2:
 				m_chosenParam.push_back("Memory size");
-				m_IphoneChosen.push_back(Iphone.getMemSize());
-				m_SamsungChosen.push_back(Samsung.getMemSize());
-				m_HuaweiChosen.push_back(Huawei.getMemSize());
+
+				for (int i = 0; i < 3; ++i)
+				{
+					m_chosenValues[i].phoneName = phones[i].getName();
+					m_chosenValues[i].stats.push_back(phones[i].getMemSize());
+				}
+
 				inUse.push_back(inVal);
 				break;
 			case 3:
 				m_chosenParam.push_back("RAM");
-				m_IphoneChosen.push_back(Iphone.getRam());
-				m_SamsungChosen.push_back(Samsung.getRam());
-				m_HuaweiChosen.push_back(Huawei.getRam());
+
+				for (int i = 0; i < 3; ++i)
+				{
+					m_chosenValues[i].phoneName = phones[i].getName();
+					m_chosenValues[i].stats.push_back(phones[i].getRam());
+				}
+
 				inUse.push_back(inVal);
 				break;
 			case 4:
 				m_chosenParam.push_back("Price");
-				m_IphoneChosen.push_back(Iphone.getPrice());
-				m_SamsungChosen.push_back(Samsung.getPrice());
-				m_HuaweiChosen.push_back(Huawei.getPrice());
+
+				for (int i = 0; i < 3; ++i)
+				{
+					m_chosenValues[i].phoneName = phones[i].getName();
+					m_chosenValues[i].stats.push_back(phones[i].getPrice());
+				}
+
 				inUse.push_back(inVal);
 				break;
 			case 5:
 				m_chosenParam.push_back("Performance");
-				m_IphoneChosen.push_back(Iphone.getPerform());
-				m_SamsungChosen.push_back(Samsung.getPerform());
-				m_HuaweiChosen.push_back(Huawei.getPerform());
+
+				for (int i = 0; i < 3; ++i)
+				{
+					m_chosenValues[i].phoneName = phones[i].getName();
+					m_chosenValues[i].stats.push_back(phones[i].getPerform());
+				}
+
 				inUse.push_back(inVal);
 				break;
 			case 6:
 				m_chosenParam.push_back("Battery");
-				m_IphoneChosen.push_back(Iphone.getBatt());
-				m_SamsungChosen.push_back(Samsung.getBatt());
-				m_HuaweiChosen.push_back(Huawei.getBatt());
+
+				for (int i = 0; i < 3; ++i)
+				{
+					m_chosenValues[i].phoneName = phones[i].getName();
+					m_chosenValues[i].stats.push_back(phones[i].getBatt());
+				}
+
 				inUse.push_back(inVal);
 				break;
 			case 7:
 				m_chosenParam.push_back("Camera");
-				m_IphoneChosen.push_back(Iphone.getCam());
-				m_SamsungChosen.push_back(Samsung.getCam());
-				m_HuaweiChosen.push_back(Huawei.getCam());
+
+				for (int i = 0; i < 3; ++i)
+				{
+					m_chosenValues[i].phoneName = phones[i].getName();
+					m_chosenValues[i].stats.push_back(phones[i].getCam());
+				}
+
 				inUse.push_back(inVal);
 				break;
 			default:
@@ -121,6 +155,4 @@ void ChosenParam::printChosen()
 }
 
 std::vector<std::string> ChosenParam::getChosenParam() const { return m_chosenParam; }
-std::vector<Param> ChosenParam::getIphoneParam() const { return m_IphoneChosen; }
-std::vector<Param> ChosenParam::getSamsungParam()const { return m_SamsungChosen; }
-std::vector<Param> ChosenParam::getHuaweiParam()const { return m_HuaweiChosen; }
+std::vector<Val> ChosenParam::getChosenValues() const { return m_chosenValues; }

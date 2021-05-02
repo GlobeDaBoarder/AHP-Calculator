@@ -10,7 +10,29 @@ void StartCalculations()
 {
 	//getting phone stats from files
 
-	Phone Iphone;
+	std::vector<Phone> phones(3);
+	
+	std::ifstream infile;
+
+	infile.open(".\\inputfiles\\Phone1.txt");
+	infile >> phones[0];
+	infile.close();
+
+	infile.open(".\\inputfiles\\Phone2.txt");
+	infile >> phones[1];
+	infile.close();
+
+	infile.open(".\\inputfiles\\Phone3.txt");
+	infile >> phones[2];
+	infile.close();
+
+	std::cout << std::endl << "Here are all the parameters of phones: " << std::endl << std::endl;
+	for (auto& i : phones)
+	{
+		std::cout << i;
+	}
+
+	/*Phone Iphone;
 	std::ifstream IphoneFile(".\\inputfiles\\IphoneParams.txt");
 	IphoneFile >> Iphone;
 	IphoneFile.close();
@@ -25,12 +47,12 @@ void StartCalculations()
 	HuaweiFile >> Huawei;
 	HuaweiFile.close();
 	std::cout << std::endl << "Here are all the parameters of phones: " << std::endl << std::endl;
-	std::cout << Iphone << Samsung << Huawei;
+	std::cout << Iphone << Samsung << Huawei;*/
 
 	//choosing parameters
 
 	ChosenParam chosenParams;
-	chosenParams.ChooseParams(Iphone, Samsung, Huawei);
+	chosenParams.ChooseParams(phones);
 	chosenParams.printChosen();
 
 	//evaluation

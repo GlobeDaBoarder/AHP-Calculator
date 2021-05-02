@@ -113,17 +113,17 @@
     <ClInclude Include="ValTableBase.h">
       <Filter>Header Files\Value evaluation table Classes</Filter>
     </ClInclude>
-    <ClInclude Include="ValuePairwise.h">
-      <Filter>Header Files\Value evaluation table Classes</Filter>
-    </ClInclude>
-    <ClInclude Include="ValueStand.h">
-      <Filter>Header Files\Value evaluation table Classes</Filter>
-    </ClInclude>
     <ClInclude Include="Inconsist.h">
       <Filter>Header Files\Criteria evaluation Table classes</Filter>
     </ClInclude>
     <ClInclude Include="ValStruct.h">
       <Filter>Header Files\input</Filter>
+    </ClInclude>
+    <ClInclude Include="ValPairwise.h">
+      <Filter>Header Files\Value evaluation table Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="ValStand.h">
+      <Filter>Header Files\Value evaluation table Classes</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

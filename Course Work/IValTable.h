@@ -4,6 +4,6 @@
 class IValTable
 {
 public:
-	//virtual void printTable(ChosenParam& chosenParams) = 0;
-	//virtual std::vector<std::vector<double>> getContent() const = 0;
+	virtual void printTable(ChosenParam& chosenParams, int& i) = 0;
+	virtual std::vector<std::vector<double>> getContent() const = 0;
 };

@@ -4,7 +4,7 @@
 struct Param
 {
 	const std::string param;
-	int value;
+	double value;
 
 	Param();
 	Param(std::string s, double spec = 0);

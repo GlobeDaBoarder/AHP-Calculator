@@ -29,9 +29,9 @@ void TableBase::printLine()
 	std::cout << std::endl;
 	for (int i = 0; i < 6; ++i)
 	{
-		for (int i = 0; i < 16; ++i)
+		for (int j = 0; j < 16; ++j)
 		{
-			if (i != 15)
+			if (j != 15)
 			{
 				std::cout << '_';
 				continue;

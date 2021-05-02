@@ -5,6 +5,7 @@
 #include "PairwiseComp.h"
 #include "Stand.h"
 #include "Inconsist.h"
+#include "ValPairwise.h"
 
 void StartCalculations()
 {
@@ -31,23 +32,6 @@ void StartCalculations()
 	{
 		std::cout << i;
 	}
-
-	/*Phone Iphone;
-	std::ifstream IphoneFile(".\\inputfiles\\IphoneParams.txt");
-	IphoneFile >> Iphone;
-	IphoneFile.close();
-
-	Phone Samsung;
-	std::ifstream SamsungFile(".\\inputfiles\\SamsungParams.txt");
-	SamsungFile >> Samsung;
-	SamsungFile.close();
-
-	Phone Huawei;
-	std::ifstream HuaweiFile(".\\inputfiles\\HuaweiParams.txt");
-	HuaweiFile >> Huawei;
-	HuaweiFile.close();
-	std::cout << std::endl << "Here are all the parameters of phones: " << std::endl << std::endl;
-	std::cout << Iphone << Samsung << Huawei;*/
 
 	//choosing parameters
 
@@ -90,6 +74,11 @@ void StartCalculations()
 	std::cout << "Calculations are finished! You can try to do"
 		"more calculations with different evaluations or quit the calculator \n\n";
 
+	//comparing values 
+
+	ValPair valPair;
+	int ind = 0;
+	valPair.printTable(chosenParams, ind);
 }
 
 int main()

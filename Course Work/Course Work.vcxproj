@@ -147,11 +147,15 @@
     <ClCompile Include="Source.cpp" />
     <ClCompile Include="Stand.cpp" />
     <ClCompile Include="TableBase.cpp" />
+    <ClCompile Include="ValPairwise.cpp" />
+    <ClCompile Include="ValStand.cpp" />
+    <ClCompile Include="ValTableBase.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ChosenParam.h" />
     <ClInclude Include="Inconst.h" />
     <ClInclude Include="ITable.h" />
+    <ClInclude Include="IValTable.h" />
     <ClInclude Include="PairwiseComp.h" />
     <ClInclude Include="Param.h" />
     <ClInclude Include="IChosenParam.h" />
@@ -159,6 +163,9 @@
     <ClInclude Include="TableBase.h" />
     <ClInclude Include="IPhone.h" />
     <ClInclude Include="Phone.h" />
+    <ClInclude Include="ValTableBase.h" />
+    <ClInclude Include="ValuePairwise.h" />
+    <ClInclude Include="ValueStand.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

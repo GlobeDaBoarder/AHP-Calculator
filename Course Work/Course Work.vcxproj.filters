@@ -16,23 +16,29 @@
     <Filter Include="Header Files\Phone classes">
       <UniqueIdentifier>{bba6f6a2-871a-4735-a502-3ce63712b60b}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\Table classes">
-      <UniqueIdentifier>{b1834073-235d-4df1-83a6-025423d0c8c7}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Header Files\input">
       <UniqueIdentifier>{ddb432f3-e3b7-4f65-b7c7-95e99c1ecf9f}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\input">
       <UniqueIdentifier>{3796c1af-1b5a-4069-b278-f73efd5acefb}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\Table classes">
-      <UniqueIdentifier>{9cff3f4a-8d30-468c-9a42-ac8c5293c7b5}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Resource Files\NewFilter1">
       <UniqueIdentifier>{70172be8-dc44-4406-91c1-36336a62bd6c}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\Phone Classes">
       <UniqueIdentifier>{4a4f6519-3ca2-4bf9-8c1c-4632ce083fc1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Criteria evaluation Table classes">
+      <UniqueIdentifier>{b1834073-235d-4df1-83a6-025423d0c8c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Value evaluation table Classes">
+      <UniqueIdentifier>{21434ddf-9750-4c30-a742-d7ea2bc35e69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Value evaluation Table Classes">
+      <UniqueIdentifier>{55e97bbc-c712-48eb-8f9e-333f80c6b928}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Criteria Evaluation Table classes">
+      <UniqueIdentifier>{9cff3f4a-8d30-468c-9a42-ac8c5293c7b5}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -43,10 +49,10 @@
       <Filter>Source Files\input</Filter>
     </ClCompile>
     <ClCompile Include="PairwiseComp.cpp">
-      <Filter>Source Files\Table classes</Filter>
+      <Filter>Source Files\Criteria Evaluation Table classes</Filter>
     </ClCompile>
     <ClCompile Include="Stand.cpp">
-      <Filter>Source Files\Table classes</Filter>
+      <Filter>Source Files\Criteria Evaluation Table classes</Filter>
     </ClCompile>
     <ClCompile Include="Param.cpp">
       <Filter>Source Files\Phone Classes</Filter>
@@ -55,10 +61,19 @@
       <Filter>Source Files\Phone Classes</Filter>
     </ClCompile>
     <ClCompile Include="TableBase.cpp">
-      <Filter>Source Files\Table classes</Filter>
+      <Filter>Source Files\Criteria Evaluation Table classes</Filter>
     </ClCompile>
     <ClCompile Include="Inconst.cpp">
-      <Filter>Source Files\Table classes</Filter>
+      <Filter>Source Files\Criteria Evaluation Table classes</Filter>
+    </ClCompile>
+    <ClCompile Include="ValTableBase.cpp">
+      <Filter>Source Files\Value evaluation Table Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="ValPairwise.cpp">
+      <Filter>Source Files\Value evaluation Table Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="ValStand.cpp">
+      <Filter>Source Files\Value evaluation Table Classes</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -66,7 +81,7 @@
       <Filter>Header Files\Phone classes</Filter>
     </ClInclude>
     <ClInclude Include="TableBase.h">
-      <Filter>Header Files\Table classes</Filter>
+      <Filter>Header Files\Criteria evaluation Table classes</Filter>
     </ClInclude>
     <ClInclude Include="ChosenParam.h">
       <Filter>Header Files\input</Filter>
@@ -78,19 +93,31 @@
       <Filter>Header Files\Phone classes</Filter>
     </ClInclude>
     <ClInclude Include="PairwiseComp.h">
-      <Filter>Header Files\Table classes</Filter>
+      <Filter>Header Files\Criteria evaluation Table classes</Filter>
     </ClInclude>
     <ClInclude Include="Stand.h">
-      <Filter>Header Files\Table classes</Filter>
+      <Filter>Header Files\Criteria evaluation Table classes</Filter>
     </ClInclude>
     <ClInclude Include="Phone.h">
       <Filter>Header Files\Phone classes</Filter>
     </ClInclude>
     <ClInclude Include="ITable.h">
-      <Filter>Header Files\Table classes</Filter>
+      <Filter>Header Files\Criteria evaluation Table classes</Filter>
     </ClInclude>
     <ClInclude Include="Inconst.h">
-      <Filter>Header Files\Table classes</Filter>
+      <Filter>Header Files\Criteria evaluation Table classes</Filter>
+    </ClInclude>
+    <ClInclude Include="IValTable.h">
+      <Filter>Header Files\Value evaluation table Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="ValTableBase.h">
+      <Filter>Header Files\Value evaluation table Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="ValuePairwise.h">
+      <Filter>Header Files\Value evaluation table Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="ValueStand.h">
+      <Filter>Header Files\Value evaluation table Classes</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

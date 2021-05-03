@@ -6,6 +6,7 @@
 #include "Stand.h"
 #include "Inconsist.h"
 #include "ValPairwise.h"
+#include "ValStand.h"
 
 void StartCalculations()
 {
@@ -71,14 +72,29 @@ void StartCalculations()
 		return;
 	}
 
+	//comparing values 
+	bool invert = false;
+	for (int ind = 0; ind < 5; ++ind)
+	{
+		std::string temps = chosenParams.getChosenParam()[ind];
+		if (temps == "Price")
+		{
+			invert = true;
+		}
+
+		ValPair valPair(chosenParams, ind, invert);
+		valPair.printTable(chosenParams, ind);
+
+		ValStand valStand(valPair);
+		valStand.printTable(chosenParams, ind);
+
+		invert = false;
+	}
+	
+
+
 	std::cout << "Calculations are finished! You can try to do"
 		"more calculations with different evaluations or quit the calculator \n\n";
-
-	//comparing values 
-
-	int ind = 0;
-	ValPair valPair(chosenParams, ind);
-	valPair.printTable(chosenParams, ind);
 }
 
 int main()

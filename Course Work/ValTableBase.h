@@ -10,7 +10,7 @@ protected:
 protected:
 	void ssprint(std::stringstream& ss, bool doubleWidth = false);
 	void printInFormat(std::string cell, bool doubleWidth = false);
-	void printInFormat(double& cell, int precision = 3);
+	void printInFormat(double& cell, int precision = 9);
 	void printInFormat(std::string name, double spec, bool doubleWidth = false);
 	void printLine();
 

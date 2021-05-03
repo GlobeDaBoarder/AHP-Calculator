@@ -7,9 +7,11 @@ private:
 
 public:
 
-	ValPair(ChosenParam& chosenParams, int& ind);
+	ValPair(ChosenParam& chosenParams, int& ind, bool& invert);
 	~ValPair();
 
 	void printTable(ChosenParam& chosenParams, int& i) override;
 	std::vector<std::vector<double>> getContent() const override;
+
+	std::vector<double> getSum() const;
 };

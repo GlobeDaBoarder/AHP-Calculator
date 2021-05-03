@@ -26,7 +26,7 @@ void ValTableBase::printInFormat(double& cell, int precision)
 void ValTableBase::printInFormat(std::string name, double spec, bool doubleWidth)
 {
 	std::stringstream ss;
-	ss << ' ' << name << "     " << std::setprecision(3) << std::fixed << spec;
+	ss << ' ' << name << "     " << std::setprecision(2) << std::fixed << spec;
 	ssprint(ss, doubleWidth);
 }
 
@@ -78,7 +78,7 @@ void ValTableBase::printTable(ChosenParam& chosenParams, int& num)
 	printInFormat(" ", true);
 	for (int i = 0; i < 3; ++i)
 	{
-		printInFormat(chosenParams.getChosenValues()[i].stats[num].value);
+		printInFormat(chosenParams.getChosenValues()[i].stats[num].value, 2);
 	}
 
 	printLine();

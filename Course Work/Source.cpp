@@ -73,6 +73,9 @@ void StartCalculations()
 	}
 
 	//comparing values 
+
+	std::vector<ValPair> valPairArr;
+	std::vector<ValStand> valStandArr;
 	bool invert = false;
 	for (int ind = 0; ind < 5; ++ind)
 	{
@@ -83,9 +86,11 @@ void StartCalculations()
 		}
 
 		ValPair valPair(chosenParams, ind, invert);
+		valPairArr.push_back(valPair);
 		valPair.printTable(chosenParams, ind);
 
 		ValStand valStand(valPair);
+		valStandArr.push_back(valStand);
 		valStand.printTable(chosenParams, ind);
 
 		invert = false;

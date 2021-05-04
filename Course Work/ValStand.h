@@ -15,4 +15,6 @@ public:
 
 	void printTable(ChosenParam& chosenParams, int& i) override;
 	std::vector<std::vector<double>> getContent() const override;
+
+	std::vector<double> getPriority() const;
 };

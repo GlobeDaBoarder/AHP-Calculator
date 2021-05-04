@@ -7,6 +7,7 @@
 #include "Inconsist.h"
 #include "ValPairwise.h"
 #include "ValStand.h"
+#include "Calculations.h"
 
 void StartCalculations()
 {
@@ -96,10 +97,15 @@ void StartCalculations()
 		invert = false;
 	}
 	
-
+	Calculations calc(stand, valStandArr);
+	calc.printTable();
 
 	std::cout << "Calculations are finished! You can try to do"
 		"more calculations with different evaluations or quit the calculator \n\n";
+	
+	//final calculations 
+
+
 }
 
 int main()

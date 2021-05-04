@@ -40,6 +40,12 @@
     <Filter Include="Source Files\Criteria Evaluation Table classes">
       <UniqueIdentifier>{9cff3f4a-8d30-468c-9a42-ac8c5293c7b5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Final Tables">
+      <UniqueIdentifier>{3e82a065-b761-4503-abcf-d4e2962eaacd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Final Tables">
+      <UniqueIdentifier>{9f105999-04fd-4707-bcee-be59d718b7e0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source.cpp">
@@ -77,6 +83,15 @@
     </ClCompile>
     <ClCompile Include="ValStruct.cpp">
       <Filter>Source Files\input</Filter>
+    </ClCompile>
+    <ClCompile Include="Calculations.cpp">
+      <Filter>Source Files\Final Tables</Filter>
+    </ClCompile>
+    <ClCompile Include="Results.cpp">
+      <Filter>Source Files\Final Tables</Filter>
+    </ClCompile>
+    <ClCompile Include="FinalPrinter.cpp">
+      <Filter>Source Files\Final Tables</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -124,6 +139,15 @@
     </ClInclude>
     <ClInclude Include="ValStand.h">
       <Filter>Header Files\Value evaluation table Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="Calculations.h">
+      <Filter>Header Files\Final Tables</Filter>
+    </ClInclude>
+    <ClInclude Include="Results.h">
+      <Filter>Header Files\Final Tables</Filter>
+    </ClInclude>
+    <ClInclude Include="FinalPrinter.h">
+      <Filter>Header Files\Final Tables</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

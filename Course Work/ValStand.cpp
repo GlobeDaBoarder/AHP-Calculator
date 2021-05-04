@@ -51,3 +51,5 @@ void ValStand::printTable(ChosenParam& chosenParams, int& i)
 }
 
 std::vector<std::vector<double>> ValStand::getContent() const { return m_content; }
+
+std::vector<double> ValStand::getPriority() const { return m_priority; }

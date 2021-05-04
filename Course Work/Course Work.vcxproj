@@ -139,11 +139,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Calculations.cpp" />
     <ClCompile Include="ChosenParam.cpp" />
+    <ClCompile Include="FinalPrinter.cpp" />
     <ClCompile Include="Inconsist.cpp" />
     <ClCompile Include="PairwiseComp.cpp" />
     <ClCompile Include="Param.cpp" />
     <ClCompile Include="Phone.cpp" />
+    <ClCompile Include="Results.cpp" />
     <ClCompile Include="Source.cpp" />
     <ClCompile Include="ValStruct.cpp" />
     <ClCompile Include="Stand.cpp" />
@@ -153,13 +156,16 @@
     <ClCompile Include="ValTableBase.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Calculations.h" />
     <ClInclude Include="ChosenParam.h" />
+    <ClInclude Include="FinalPrinter.h" />
     <ClInclude Include="Inconsist.h" />
     <ClInclude Include="ITable.h" />
     <ClInclude Include="IValTable.h" />
     <ClInclude Include="PairwiseComp.h" />
     <ClInclude Include="Param.h" />
     <ClInclude Include="IChosenParam.h" />
+    <ClInclude Include="Results.h" />
     <ClInclude Include="Stand.h" />
     <ClInclude Include="TableBase.h" />
     <ClInclude Include="IPhone.h" />

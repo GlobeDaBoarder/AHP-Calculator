@@ -98,7 +98,7 @@ void StartCalculations()
 	}
 	
 	Calculations calc(stand, valStandArr);
-	calc.printTable();
+	calc.printTable(chosenParams, stand, valStandArr);
 
 	std::cout << "Calculations are finished! You can try to do"
 		"more calculations with different evaluations or quit the calculator \n\n";

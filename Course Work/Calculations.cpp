@@ -12,7 +12,7 @@ Calculations::Calculations(Stand& stand, std::vector<ValStand>& valStandArr)
 	{
 		for (int j = 0; j < 3; ++j)
 		{
-			m_weightXprior[i][j] = stand.getWeights()[i] * valStandArr[i].getPriority()[j];
+			m_weightXprior[i][j] = (stand.getWeights()[i]/100) * valStandArr[i].getPriority()[j];
 		}
 	}
 }
@@ -21,7 +21,7 @@ Calculations::~Calculations()
 {
 }
 
-void Calculations::printTable()
+void Calculations::printTable(ChosenParam& chosenp, Stand& stand, std::vector<ValStand>& valStandArr)
 {
 	printInFormat("Criteria", true);
 	printInFormat("Models", true);
@@ -33,14 +33,32 @@ void Calculations::printTable()
 
 	printLine(true);
 
-	for (int i = 0; i < 7; ++i)
+	for (int i = 0; i < 5; ++i)
 	{
-		for (int j = 0; j < 5; ++j)
+		for (int j = 0; j < 3; ++j)
 		{
-			for (int q = 0; q < 3; ++q)
+			if (j == 0)
 			{
+				printInFormat(chosenp.getChosenParam()[i], false);
+			}
+			else
+			{
+				printInFormat(' ');
+			}
 
+			printInFormat(chosenp.getChosenValues()[j].phoneName, false);
+			printInFormat(valStandArr[i].getPriority()[j], false);
+			printInFormat('*');
+			printInFormat((stand.getWeights()[i]/100), false);
+			printInFormat('=');
+			printInFormat(m_weightXprior[i][j]);
+
+			if (j != 2)
+			{
+				std::cout << std::endl;
 			}
 		}
+
+		printLine(false);
 	}
 }

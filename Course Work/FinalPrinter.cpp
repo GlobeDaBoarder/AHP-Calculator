@@ -8,13 +8,6 @@ void FinalPrinter::printSS(std::stringstream& ss, bool border)
 	std::cout << std::setw(20) << std::left << ss.str() << ((border) ? '|' : ' ');
 }
 
-void FinalPrinter::printInFormat(std::string& s, bool border)
-{
-	std::stringstream ss;
-	ss << ' '<<  s;
-	printSS(ss, border);
-}
-
 void FinalPrinter::printInFormat(std::string s, bool border)
 {
 	std::stringstream ss;
@@ -22,7 +15,7 @@ void FinalPrinter::printInFormat(std::string s, bool border)
 	printSS(ss, border);
 }
 
-void FinalPrinter::printInFormat(double& num, bool border)
+void FinalPrinter::printInFormat(double num, bool border)
 {
 	std::stringstream ss;
 	ss << ' '<<  std::setprecision(7) << num;
@@ -44,4 +37,6 @@ void FinalPrinter::printLine(bool border)
 		std::cout << std::setw(20) << std::setfill('_')  << '_' <<((border || (i == 6)) ? '|' : '_');
 	}
 	std::cout << std::endl;
+
+	std::cout.fill(' ');
 }

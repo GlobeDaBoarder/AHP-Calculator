@@ -14,6 +14,6 @@ public:
 	Calculations(Stand& stand, std::vector<ValStand>& valStandArr);
 	~Calculations();
 
-	void printTable();
+	void printTable(ChosenParam& chosenp, Stand& stand, std::vector<ValStand>& valStandArr);
 };
 

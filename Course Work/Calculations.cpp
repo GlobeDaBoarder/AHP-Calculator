@@ -62,3 +62,5 @@ void Calculations::printTable(ChosenParam& chosenp, Stand& stand, std::vector<Va
 		printLine(false);
 	}
 }
+
+const std::vector<std::vector<double>>& Calculations::getWXP() const { return m_weightXprior; }

@@ -8,6 +8,7 @@
 #include "ValPairwise.h"
 #include "ValStand.h"
 #include "Calculations.h"
+#include"Results.h"
 
 void StartCalculations()
 {
@@ -97,15 +98,35 @@ void StartCalculations()
 		invert = false;
 	}
 	
+	//final calculations 
+
 	Calculations calc(stand, valStandArr);
 	calc.printTable(chosenParams, stand, valStandArr);
 
+	Results res(calc);
+	res.printTable(chosenParams);
+
+
+	//outputting choice
+
+	std::cout << "MODEL WITH BIGGER GOAL SCORE IS OUR CHOICE!!" << std::endl;
+
+	double maxGoal = res.getGoals()[0];
+	int maxInd = 0;
+	for (int i = 1; i < res.getGoals().size(); ++i)
+	{
+		if (res.getGoals()[i] > maxGoal)
+		{
+			maxGoal = res.getGoals()[i];
+			maxInd = i;
+		}
+	}
+
+	std::cout << "YOUR PICK ACCORDING TO AHP METHOD CALCULATOR SHOULD BE: \n\t" << chosenParams.getChosenValues()[maxInd].phoneName;
+	std::cout << std::endl << std::endl;
+
 	std::cout << "Calculations are finished! You can try to do"
 		"more calculations with different evaluations or quit the calculator \n\n";
-	
-	//final calculations 
-
-
 }
 
 int main()

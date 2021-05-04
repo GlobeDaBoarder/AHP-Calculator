@@ -158,6 +158,7 @@
   <ItemGroup>
     <ClInclude Include="Calculations.h" />
     <ClInclude Include="ChosenParam.h" />
+    <ClInclude Include="FinalBase.h" />
     <ClInclude Include="FinalPrinter.h" />
     <ClInclude Include="Inconsist.h" />
     <ClInclude Include="ITable.h" />

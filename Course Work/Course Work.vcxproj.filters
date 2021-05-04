@@ -149,5 +149,8 @@
     <ClInclude Include="FinalPrinter.h">
       <Filter>Header Files\Final Tables</Filter>
     </ClInclude>
+    <ClInclude Include="FinalBase.h">
+      <Filter>Header Files\Final Tables</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
